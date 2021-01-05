@@ -11,6 +11,17 @@ git checkout -b prenom.nom
 composer install
 ```
 
+## Commandes utiles
+
+```bash
+# Mettre à jour les dépendances
+composer update
+# Lancer mon script
+php public/index.php
+# Lancer les tests
+./vendor/bin/phpunit
+```
+
 ## Enoncé
 
 A venir ^^
