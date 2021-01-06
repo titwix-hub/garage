@@ -1,9 +1,9 @@
 <?php
 
-require __DIR__.'/../vendor/autoload.php';
+namespace App;
 
-use App\Car;
+require __DIR__.'/../vendor/autoload.php';
 
 $car = new Car('Peugeot 205');
 
-var_dump($car);
+dump($car);
