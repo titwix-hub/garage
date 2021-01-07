@@ -1,8 +1,8 @@
 <?php
 
-use App\Car;
+namespace Tests;
 
-use PHPUnit\Framework\TestCase;
+use App\Car;
 
 class CarTest extends TestCase
 {

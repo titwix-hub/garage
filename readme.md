@@ -22,6 +22,17 @@ php public/index.php
 ./vendor/bin/phpunit
 ```
 
+## Commandes utiles (docker)
+
+```bash
+# Mettre à jour les dépendances
+docker run --rm -it -v $PWD:/app composer update
+# Lancer mon script
+docker run --rm -it -v $PWD:/app -w /app php:7.4-cli php public/index.php
+# Lancer les tests
+docker run --rm -it -v $PWD:/app -w /app php:7.4-cli vendor/bin/phpunit
+```
+
 ## Critères d'évaluations
 
 Voyez moi comme le chef produit qui va vous demander le développement
