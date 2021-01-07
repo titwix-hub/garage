@@ -66,7 +66,7 @@ Il a aussi la capacité de fournir une dénomination.
 > Une Marque est définie par un nom visible de tous.  
 
 > Un Véhicule est défini par un nom, une Marque et un prix.  
-Elle doit être capable de donner sa popularité mais cette notion lui est abstraite.
+Elle doit être capable de donner publiquement sa popularité mais cette notion lui est abstraite.
 
 > Une Voiture est un Véhicule particulier.  
 Elle est définie par un compteur kilométrique, une année de construction.  
@@ -91,7 +91,7 @@ Il a donc la capacité de donner son prix qui vaut 5 €.
 Il a aussi la capacité de donner sa dénomination qui vaut son nom.
 
 > Un Panier est défini par 0 ou plus Articles.  
-Il a la capacité de fournir une facture qui retourne un tableau contenant 2 clés.  
+Il a la capacité de fournir publiquement une facture qui retourne un tableau contenant 2 clés.  
 La 1ere a pour valeur les dénominations de tous ses Articles séparés par une virgule.  
 La seconde a pour valeur la somme des prix de tous ses Articles.
 
