@@ -4,9 +4,12 @@ namespace App;
 
 require __DIR__.'/../vendor/autoload.php';
 
-$car = new Car('Peugeot 205');
+$voiture = new Voiture(1000, 1800, '205', 3000, 'Peugeot');
 
-dump($car);
+dump($voiture);
+dump($voiture->giveDenomination());
+dump($voiture->getTarif());
+dump($voiture->givePop());
 
 // Format attendu de la facture du panier
 

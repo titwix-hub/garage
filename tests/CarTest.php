@@ -2,15 +2,16 @@
 
 namespace Tests;
 
-use App\Car;
+use App\Voiture;
 
 class CarTest extends TestCase
 {
     /** @test */
-    public function can_have_car_name()
+    public function creation_voiture()
     {
-        $car = new Car('Fiat Punto');
+        $car = new Voiture(1000, 2000, '205', 3000, 'Peugeot');
 
-        $this->assertEquals('Fiat Punto', $car->name);
+        $this->assertEquals('Peugeot', $car->nameMarque);
+        $this->assertEquals('Peugeot 205', $car->giveDenomination());
     }
 }

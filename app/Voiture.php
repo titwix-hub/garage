@@ -9,7 +9,11 @@ class Voiture extends Vehicule implements Article
 
     protected function calcUsure(): int
     {
-        return $this->compteur * (date("Y") - $this->annee);
+        if(date("Y") != $this->annee){
+            return $this->compteur * (date("Y") - $this->annee);
+        }else{
+            return 0;
+        }
     }
 
     public function givePop(): bool
@@ -31,8 +35,12 @@ class Voiture extends Vehicule implements Article
         return $this->nameMarque." ".$this->name;
     }
     // à continuer
-    public function __construct(int $compteur, int $annee, string $name, int $prix)
+    public function __construct(int $compteur, int $annee, string $name, int $prix, string $nameMarque)
     {
-        1;
+        $this->compteur = $compteur;
+        $this->annee = $annee;
+        $this->name = $name;
+        $this->prix = $prix;
+        $this->nameMarque = $nameMarque;
     }
 }

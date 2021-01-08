@@ -27,8 +27,12 @@ class Utilitaire extends Vehicule
     }
 
     // à faire
-    public function __construct(string $name)
+    public function __construct(int $volume, int $compteur, string $name, int $prix, string $nomMarque)
     {
+        $this->volume = $volume;
+        $this->compteur = $compteur;
         $this->name = $name;
+        $this->prix = $prix;
+        $this->nameMarque = $nameMarque;
     }
 }
